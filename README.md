@@ -71,3 +71,7 @@ const std::vector<int>& gf - константне посилання на век
 Створення Поля Галуа
 ![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/3b51f5fa-60bf-4a9f-b7dd-22564a9fbc9e)
 
+
+
+![Untitled Diagram drawio](https://github.com/Adey4k/EasyQRTool/assets/150963491/a3909c3f-a90e-4948-ac38-17cbc59f24cf)
+
