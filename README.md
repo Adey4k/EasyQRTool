@@ -27,7 +27,47 @@ const std::vector<int>& gf - константне посилання на век
 
 Функція для побітового складення за модулем 255 у полі Галуа
 ![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/697882bf-c50b-40b7-8685-15046a4e6463)
+Результат побітового складення за модулем 255 - залишок від ділення суми доданків на 255
 
+Функція addCorrectionBytes
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/6191475e-bb04-4acc-a240-72983f226857)
+Ця функція реалізовує алгоритм Рида Соломона(створює байти корекції), нижче наведена більш детальна інформація
 
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/69b9932f-94a7-4d86-a0ad-7250bbc5596a)
+Ця частина зберігає значення першого елементу в масиві, і додає нуль в кінці
 
+Перевірка, чи не є збереженний байт нулем(нуль необіхдно пропустити)
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/febba9ee-048b-4826-b674-49c8946a3cf2)
+
+Побітове складення за модулем 2
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/fe1b8969-4c95-439a-8bf5-901324cd498d)
+
+Повернення вектора з байтами корекції
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/23a4e5ba-ab56-40e2-a297-77cf07b946b0)
+
+-----------------------------------------------------------------------------------------
+
+Основна частина.
+Блок 1 - Кодування інформації
+
+Отримання інформації від користувача
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/7ca10cd5-75c2-41b9-8da0-bafb19c7c791)
+
+Перевірка на коректність вводу і перетворення інформації на бінарну послідовність, збереження її у нову змінну
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/77316c71-b0cd-45e1-89f2-1ba0d6df5826)
+
+Блок 2 - Додавання службової інформації і заповнення
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/343e8992-6ead-4f56-a1ac-48fa00ff995d)
+
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/2c254c86-d211-4f85-b5d2-980205cc85a2)
+Моя програма підтримує з першої по шосту версії QR-кода, цей код виведе помилку якщо користувач спробує закодувати забагато даних
+
+Блок 3 - Розподіл інформації на блоки
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/3fd0dcaf-459f-4b12-810c-4427cbf324ba)
+
+Блок 4 - Створення байтів корекції
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/0eeec021-de31-45ba-bf21-35dc2a53cf88)
+
+Створення Поля Галуа
+![image](https://github.com/Adey4k/EasyQRTool/assets/150963491/3b51f5fa-60bf-4a9f-b7dd-22564a9fbc9e)
 
