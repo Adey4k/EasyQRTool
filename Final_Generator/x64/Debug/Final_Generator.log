@@ -1,0 +1,6 @@
+﻿  Final_Generator.cpp
+D:\Maxprog\Final_Generator\Final_Generator.cpp(20,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Maxprog\Final_Generator\Final_Generator.cpp(44,20): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Final_Generator.vcxproj -> D:\Maxprog\Final_Generator\x64\Debug\Final_Generator.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
